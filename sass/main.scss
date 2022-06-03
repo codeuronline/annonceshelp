@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+
+
+body {
+margin: 40px;
+text-align: center;
+}
+
+
+
+.liste {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+nav {
+background: #FAC900;
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+align-items: center;
+padding-left: 50px;
+padding-right: 50px;
+position: relative;
+height: 120px;
+
+
+.ml4 {
+    position: relative;
+    font-weight: 900;
+    font-size: 2em;
+    position: absolute;
+   
+  }
+  .ml4 .letters {
+    position: absolute;
+    margin: auto;
+    left: 600px;
+    top: 0.3em;
+    bottom: 80px;
+    right: 0;
+    opacity: 0; 
+    height: auto;
+
+  }
+}
+
+.boutton {
+    background-color: #44D9E6; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+
+}
+img {
+    width: 150px;
+}
+
+span {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin : 80px;
+}
+
+.annonce {
+    border:2px solid;
+    border: outset;
+    border-radius: 6px;
+    margin : 10px;
+    box-shadow: 10px 10px 10px rgb(214, 212, 212);
+    width: 500px;
+    height: auto;
+
+}
+
+button {
+    margin : 10px;
+}
+
+.plus {
+    background-color: #FAC900; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+
+
+}
+
+
+.plus:hover {
+    background-color: #323432; /* Green */
+    color: white;
+    box-shadow: 10px 5px 5px rgb(214, 212, 212);
+}
+
+.logo {
+
+    width: 200px;
+}
+
+.pagination  {
+
+     display: flex;
+     justify-content:space-around;
+   
+}
+
+.recherche {
+
+    display: flex;
+    justify-content:space-around;
+}
+
+label {
+font-size: 20px;
+    margin: 5px;
+
+  }
+
+  #recherche {
+background: white;
+width: 100px;
+height: 20px;
+font-size: 16px;
+  }
+  form {
+    background-color:#FAC900;
+    padding:10px;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   border: #44D9E6 solid 2px;
+    }
+
+    .partie1 {
+        display: flex;
+        flex-direction: column;
+
+    }
+  .partie2 {
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  h4 {
+      font-size: 20px;
+      text-align: center;
+  }
+
+  select {
+   
+    background: white;
+    background-image: none;
+    box-shadow: 10px 10px 10px grey;
+    font-size: 16px;
+    
+  }
+  fieldset {
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+
+  legend {
+    padding: 0px 3px;
+    font-weight: bold;
+    font-variant: small-caps;
+  }
+  label {
+    margin-top:10px;
+    display:block;
+    }
+   label.inline {
+    display:inline;
+    margin-right:50px;
+    }
+
+input {
+    padding:3px;
+    border:1px solid black;
+    border-radius:5px;
+    width:200px;
+    box-shadow:1px 1px 2px #C0C0C0 inset;
+
+}
+  input[type=submit], input[type=reset] {
+    width:100px;
+    margin-left:5px;
+    box-shadow:5px 5px 5px grey;
+    cursor:pointer; }
+    
+
+    #submit {
+        button {
+            width:100px;
+            margin-left:5px;
+            box-shadow:5px 5px 5px grey;
+            cursor:pointer;
+
+        }
+    }
+
+    #slider {
+        position: relative;
+        width: 500px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #slider img {
+        width: 500px;
+    }
+
+    #precedent,
+    #suivant {
+        cursor: pointer;
+        transition: opacity 0.3s ease;
+        opacity: 0;
+        position: absolute;
+        font-size: 50px;
+        color: rgba(220, 220, 220, 0.8);
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 10px;
+        margin: -50px;
+     
+    }
+    
+    #precedent {
+        left: 0;
+    }
+    
+    #suivant {
+        right: 0;
+    }
+    
+    #slider:hover #precedent,
+    #slider:hover #suivant {
+        opacity: 1;
+    }
+
+  

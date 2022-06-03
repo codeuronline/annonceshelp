@@ -1,0 +1,19 @@
+{
+    "name": "micha/annonces",
+    "autoload": {
+        "psr-4": {
+            "Router\\":"routes/",
+            "App\\":"app/",
+            "Database\\":"database/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Micka73100",
+            "email": "Michael-73@live.Fr"
+        }
+    ],
+    "require": {
+        "dompdf/dompdf": "^1.2"
+    }
+}
