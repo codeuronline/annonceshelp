@@ -95,7 +95,7 @@ class AnnonceController extends Controller
                 ->setphoto4($_FILES['photo4']['name'])
                 ->setphoto5($_FILES['photo5']['name']);
 
-            //CONDITION POUR VERIFIER SI ON A UN ID ALORS ON APPELLE LA FONCTION UPDATE
+            //CONDITION LES ELEMENTS DETERMINENT LA PRESENCE D'UN ID -> SI ID ALORS ON APPELLE LA FONCTION UPDATE
             if (isset($_POST['id']) && !empty($_POST['id'])) {
                 for ($i = 1; $i <= 5; $i++) {
                     $filename = $_FILES["photo$i"]['name'];
